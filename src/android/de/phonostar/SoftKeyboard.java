@@ -54,10 +54,7 @@ public class SoftKeyboard extends CordovaPlugin {
     }
     
     private View getAndroidViewByCordovaWebView(){
-        if (webView instanceof View){
-            return webView;
-        } else {
-            return webView.getView();   
-        }
+        return webView.getView();   
+        
     }
 }
